@@ -1,0 +1,138 @@
+/* Definindo a paleta de cores */
+:root {
+    --cor-roxo: rgb(128, 106, 179);
+    --cor-amarelo: rgb(248, 214, 103);
+    --cor-branco: rgb(255, 255, 255);
+    --cor-cinza-claro: rgb(197, 189, 205);
+    --cor-roxo-escuro: rgb(85, 55, 108);
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-branco);
+    color: var(--cor-roxo);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-roxo);
+    color: var(--cor-branco);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilizando o menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--cor-amarelo);
+}
+
+/* Seções principais */
+main {
+    padding: 20px;
+}
+
+/* Estilizando os cards de animais */
+.animal {
+    border: 1px solid var(--cor-cinza-claro);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    display: inline-block;
+    background-color: var(--cor-branco);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.animal h3 {
+    color: var(--cor-roxo);
+    margin-bottom: 10px;
+}
+
+.animal p {
+    color: var(--cor-cinza-claro);
+    margin-bottom: 10px;
+}
+
+.animal img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Formulário de contato */
+form {
+    background-color: var(--cor-cinza-claro);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--cor-roxo-escuro);
+    border-radius: 5px;
+}
+
+form select, form input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: var(--cor-roxo);
+    color: var(--cor-branco);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-amarelo);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-roxo-escuro);
+    color: var(--cor-branco);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .animal {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

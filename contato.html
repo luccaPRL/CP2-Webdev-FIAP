@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto Pacotinho de Amor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="adote.html">Animais Disponíveis</a></li>
+                <li><a href="divulgacoes.html">Participação em Feirinhas</a></li>
+                <li><a href="doacoes.html">Como Ajudar</a></li>
+                <li><a href="guia.html">Guia para Novos Adotantes</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contato">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Tem alguma dúvida ou precisa de mais informações? Estamos aqui para ajudar!</p>
+
+            <form id="contato-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required minlength="2">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="adocao">Adoção</option>
+                    <option value="ajudar">Como ajudar?</option>
+                    <option value="eventos">Próximos eventos</option>
+                    <option value="sugestoes">Sugestões</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="redes-sociais">
+            <h3>Redes Sociais</h3>
+            <p>Conecte-se conosco nas redes sociais:</p>
+            <ul>
+                <li><a href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/people/Projeto-Pacotinho-de-Amor/100090674193671/" target="_blank">Facebook</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Projeto Pacotinho de Amor. Todos os direitos reservados.</p>
+        <p>Desenvolvido por [Seu Nome]</p>
+    </footer>
+</body>
+</html>
