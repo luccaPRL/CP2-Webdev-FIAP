@@ -1,30 +1,21 @@
-/* Definindo a paleta de cores */
-:root {
-    --cor-roxo: rgb(128, 106, 179);
-    --cor-amarelo: rgb(248, 214, 103);
-    --cor-branco: rgb(255, 255, 255);
-    --cor-cinza-claro: rgb(197, 189, 205);
-    --cor-roxo-escuro: rgb(85, 55, 108);
-}
-
-/* Estilo geral do corpo */
+/* Estilo de quase tudo */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--cor-branco);
-    color: var(--cor-roxo);
+    background-color: rgb(255, 255, 255);
+    color: rgb(128, 106, 179);
     margin: 0;
     padding: 0;
 }
 
-/* Cabeçalho */
+/* cabesalho */
 header {
-    background-color: var(--cor-roxo);
-    color: var(--cor-branco);
+    background-color: rgb(128, 106, 179);
+    color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
 }
 
-/* Estilizando o menu de navegação */
+/* menu de navegação */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -38,40 +29,40 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--cor-branco);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: var(--cor-amarelo);
+    color: rgb(248, 214, 103);
 }
 
-/* Seções principais */
+/* Secoes principais */
 main {
     padding: 20px;
 }
 
-/* Estilizando os cards de animais */
+/* Cards dos animalzinhos */
 .animal {
-    border: 1px solid var(--cor-cinza-claro);
+    border: 1px solid rgb(197, 189, 205);
     border-radius: 10px;
     padding: 15px;
     margin: 20px;
     display: inline-block;
-    background-color: var(--cor-branco);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
 }
 
 .animal h3 {
-    color: var(--cor-roxo);
+    color: rgb(128, 106, 179);
     margin-bottom: 10px;
 }
 
 .animal p {
-    color: var(--cor-cinza-claro);
+    color: rgb(197, 189, 205);
     margin-bottom: 10px;
 }
 
@@ -80,9 +71,9 @@ main {
     border-radius: 10px;
 }
 
-/* Formulário de contato */
+/* Contato */
 form {
-    background-color: var(--cor-cinza-claro);
+    background-color: rgb(197, 189, 205);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -92,7 +83,7 @@ form input[type="text"], form input[type="email"], form input[type="tel"], form 
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid var(--cor-roxo-escuro);
+    border: 1px solid rgb(85, 55, 108);
     border-radius: 5px;
 }
 
@@ -101,8 +92,8 @@ form select, form input[type="checkbox"] {
 }
 
 form button {
-    background-color: var(--cor-roxo);
-    color: var(--cor-branco);
+    background-color: rgb(128, 106, 179);
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -110,16 +101,16 @@ form button {
 }
 
 form button:hover {
-    background-color: var(--cor-amarelo);
+    background-color: rgb(248, 214, 103);
 }
 
-/* Rodapé */
+/* Rodape */
 footer {
-    background-color: var(--cor-roxo-escuro);
-    color: var(--cor-branco);
+    background-color: rgb(85, 55, 108);
+    color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
-    position: fixed;
+    position: unset;
     bottom: 0;
     width: 100%;
 }
